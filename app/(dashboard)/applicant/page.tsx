@@ -579,17 +579,19 @@ export default function ApplicantDashboard() {
           </Card>
         </Link>
 
-        <Card className="hover:shadow-md transition-shadow cursor-pointer">
-          <CardContent className="p-6 flex flex-col items-center text-center">
-            <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-              <Eye className="w-6 h-6 text-purple-600" />
-            </div>
-            <h3 className="font-semibold">View Status</h3>
-            <p className="text-sm text-muted-foreground mt-2">
-              Check application progress
-            </p>
-          </CardContent>
-        </Card>
+        
+        <Link href="/applicant/status">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                <Eye className="w-6 h-6 text-purple-600" />
+              </div>
+              <h3 className="font-semibold">View Status</h3>
+              <p className="text-sm text-muted-foreground mt-2">
+                Check application admission status               </p>
+            </CardContent>
+          </Card>
+        </Link>
 
         <Link href="/applicant/detail">
           <Card className="hover:shadow-md transition-shadow cursor-pointer">
@@ -599,7 +601,7 @@ export default function ApplicantDashboard() {
               </div>
               <h3 className="font-semibold">View Detail</h3>
               <p className="text-sm text-muted-foreground mt-2">
-                Check application progress
+                Check application etails
               </p>
             </CardContent>
           </Card>
