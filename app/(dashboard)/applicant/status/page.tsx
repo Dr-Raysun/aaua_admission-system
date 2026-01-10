@@ -272,7 +272,7 @@ export default function AdmissionLetterPage() {
       <div className="min-h-screen bg-gray-100 dark:bg-zinc-950 flex items-center justify-center">
         <div className="text-center space-y-4">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
-          <p className="text-muted-foreground">Loading authentication...</p>
+          <p className="text-muted-foreground">Loading authentication......</p>
         </div>
       </div>
     );
@@ -285,7 +285,7 @@ export default function AdmissionLetterPage() {
           <CardContent className="py-12 text-center">
             <h2 className="text-2xl font-bold mb-2">Please Sign In</h2>
             <p className="text-muted-foreground mb-6">
-              You need to be signed in to view your admission letter
+              You needed to be signed in to view your admission letter
             </p>
             <Link href="/sign-in">
               <Button className="w-full">Sign In</Button>
