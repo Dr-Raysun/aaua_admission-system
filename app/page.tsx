@@ -33,12 +33,12 @@ export default function HomePage() {
             efficient online system. No more queues, no more delays.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/sign-up">
+            <Link href="/applicant/application">
               <Button size="lg" className="px-8">
                 Start New Application
               </Button>
             </Link>
-            <Link href="/sign-in">
+            <Link href="/applicant/status">
               <Button size="lg" variant="outline" className="px-8">
                 Check Application Status
               </Button>
