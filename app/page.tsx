@@ -1,3 +1,4 @@
+// app/page.tsx
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -7,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import {
   CheckCircle,
   ShieldCheck,
@@ -21,44 +21,8 @@ import {
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      {/* Navigation */}
-      <nav className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <GraduationCap className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-blue-900">
-                AAUA Admission
-              </h1>
-              <p className="text-xs text-blue-700">
-                Adekunle Ajasin University
-              </p>
-            </div>
-          </div>
-
-          <div className="space-x-4">
-            {/* Show when user is signed out */}
-            <SignedOut>
-              <Link href="/sign-in">
-                <Button variant="outline">Sign In</Button>
-              </Link>
-              <Link href="/sign-up">
-                <Button>Apply Now</Button>
-              </Link>
-            </SignedOut>
-
-            {/* Show when user is signed in */}
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
+    <>
+      {/* Hero Section - Navigation is now in layout */}
       <section className="container mx-auto px-4 py-16 md:py-24 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -270,6 +234,6 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 }
