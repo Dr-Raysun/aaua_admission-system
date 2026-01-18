@@ -32,11 +32,19 @@ export default function Header() {
             <Link href="/sign-up">
               <Button>Apply Now</Button>
             </Link>
+            <Link href="/admin">
+              <Button variant="outline">Admin</Button>
+            </Link>
           </SignedOut>
 
           {/* Show when user is signed in */}
           <SignedIn>
-            <UserButton />
+            <div className="flex items-center gap-4">
+              <Link href="/admin">
+                <Button variant="outline">Admin</Button>
+              </Link>
+              <UserButton />
+            </div>
           </SignedIn>
         </div>
       </div>
