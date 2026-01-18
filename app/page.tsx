@@ -38,6 +38,11 @@ export default function HomePage() {
                 Start New Application
               </Button>
             </Link>
+            <Link href="/applicant/detail">
+              <Button size="lg" variant="outline" className="px-8">
+                Check Application details
+              </Button>
+            </Link>
             <Link href="/applicant/status">
               <Button size="lg" variant="outline" className="px-8">
                 Check Application Status
