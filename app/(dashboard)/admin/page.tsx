@@ -11,6 +11,7 @@ import AdminDashboard from "@/components/AdminDashboard";
 // List of authorized email addresses
 const AUTHORIZED_EMAILS = [
   "raysynergygroup@gmail.com",
+  "adedotunabigael21@gmail.com",
   // Add the other two email addresses here
   // "second-email@example.com",
   // "third-email@example.com",
